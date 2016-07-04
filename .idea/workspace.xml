@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f2b80b12-965e-4958-bd48-2d3b5086115e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SPACanCan.iml" afterPath="$PROJECT_DIR$/.idea/SPACanCan.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SPACanCan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8652695">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.88922155">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -968,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8652695">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.88922155">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding />
         </state>
       </provider>
