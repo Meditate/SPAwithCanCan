@@ -8,6 +8,8 @@ class Ability
 
     if user.is? :admin
       can :manage, User
+      cannot :destroy, User, :email => 'admin@example.com'
+      cannot :update, User, :email => 'admin@example.com'
     end
 
     if user.is? :user

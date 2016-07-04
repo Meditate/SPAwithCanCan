@@ -11,8 +11,11 @@
         </button>
         <%=link_to 'CanCanSPA',root_path, class:'navbar-brand'%>
       </div>
-
       <!-- Collect the nav links, forms, and other content for toggling -->
+      <% flash.each do |message_type, message| %>
+          <div class="navbar-text navbar-right" style=""><%=message%></div>
+      <% end %>
+
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <%if user_signed_in? %>
