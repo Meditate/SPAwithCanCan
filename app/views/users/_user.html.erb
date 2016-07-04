@@ -2,7 +2,7 @@
     <table>
       <tr style="vertical-align: baseline;">
         <td>
-    <%=user.email %>
+    <%=link_to user.email, user  %>
         </td>
         <td>
     <%= simple_form_for(user) do |f| %>
