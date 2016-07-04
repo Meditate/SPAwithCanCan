@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
-  before_filter :set_params, only: [:show, :destroy]
+  load_and_authorize_resource
+
+  before_filter :set_params, only: [:show, :destroy, :update]
+  before_filter :authenticate_user!
+
   def index
     @users=User.all
   end
@@ -11,12 +15,24 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
 
-    redirect_to root_path
+    redirect_to users_path
+  end
+
+  def update
+    if @user.update(user_params)
+      redirect_to users_path, :success=> "User updated"
+    else
+      redirect_to users_path, :alert => "Unable to update user"
+    end
   end
 
   private
 
   def set_params
     @user=User.find(params[:id])
+  end
+
+  def user_params
+    params.require(:user).permit(:role)
   end
 end

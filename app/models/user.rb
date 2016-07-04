@@ -5,8 +5,11 @@ class User < ActiveRecord::Base
   def set_default_role
     self.role ||= :user
   end
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
+
+  def is?(role)
+    self.role == role.to_s
+  end
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end
