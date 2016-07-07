@@ -5,6 +5,7 @@ Here I tried to play around CanCan gem, so if you want to test this Signle Page 
 and sign in as admin:
 
 Email:     admin@example.com
+
 Password:  password
 
 Tested with : Rspec
