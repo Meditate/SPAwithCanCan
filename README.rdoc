@@ -3,6 +3,7 @@
 Hi there!
 Here I tried to play around CanCan gem, so if you want to test this Signle Page Application, just go through the link above
 and sign in as admin:
+
 Email:     admin@example.com
 Password:  password
 
