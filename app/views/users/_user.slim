@@ -1,0 +1,11 @@
+.well
+  p
+    ==simple_form_for(user) do |f|
+      .col-md-3
+        ==link_to user.email, user
+      .col-md-3
+        ==f.input :role, collection: (User.roles.keys).map{|role| [role.titleize, role]}, label: false, include_blank: false
+      .col-md-3
+        ==f.submit class:'btn btn-default'
+      .col-md-3
+        ==link_to 'delete', user_path(user), class: 'btn btn-default', method: :delete
