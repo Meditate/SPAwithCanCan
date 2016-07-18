@@ -1,28 +1,31 @@
-== README
+== CanCanSPA
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi there!
+Here I tried to play around CanCan gem, so if you want to test this Signle Page Application, just go through the link above
+and sign in as admin:
 
-Things you may want to cover:
+Email:     admin@example.com
 
-* Ruby version
+Password:  password
 
-* System dependencies
+Tested with : Rspec
 
-* Configuration
+Gems I used:
 
-* Database creation
+* simple_form
 
-* Database initialization
+* bootstrap
 
-* How to run the test suite
+* faker
 
-* Services (job queues, cache servers, search engines, etc.)
+* FactoryGirl
 
-* Deployment instructions
+* Rspec
 
-* ...
+* Capybara
+
+* Devise
+
+* CanCan
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
