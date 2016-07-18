@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title SPACanCan
+    ==stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    ==javascript_include_tag 'application', 'data-turbolinks-track' => true
+    ==csrf_meta_tags
+  body
+    =render "layouts/header"
+    .col-lg-1
+    .col-lg-10
+      ==yield
+    .col-lg-1
