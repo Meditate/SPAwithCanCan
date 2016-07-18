@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'cancan'
+gem 'slim'
 
 group :development, :test do
   gem 'sqlite3'
