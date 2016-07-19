@@ -1,15 +1,14 @@
 class UsersController < ApplicationController
   load_and_authorize_resource
 
-  before_filter :set_params, only: [:show, :destroy, :update]
-  before_filter :authenticate_user!
+  before_action :set_params, only: [:show, :destroy, :update]
+  before_action :authenticate_user!
 
   def index
-    @users=User.all
+    @users = User.all
   end
 
   def show
-
   end
 
   def destroy
@@ -20,16 +19,16 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to users_path, :success=> "User updated"
+      redirect_to users_path, success: "User updated"
     else
-      redirect_to users_path, :alert => "Unable to update user"
+      redirect_to users_path, alert: "Unable to update user"
     end
   end
 
   private
 
   def set_params
-    @user=User.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   def user_params
